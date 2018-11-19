@@ -1,0 +1,29 @@
+---
+
+server:
+ port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sudeep0901/spring-cloudconfig-wa-tolls
+          #username: sudeep0901
+          #password:
+          search-paths:
+          - 'station*'
+          - '*dev*'
+          repos:
+           perf:
+            pattern:
+             - "*/perf"
+            uri: https://github.com/sudeep0901/spring-cloudconfig-wa-tolls-performance
+            search-paths:
+              - 'station*'
+  security:
+    basic: 
+      enabled: true
+    user:
+      name: admin
+      password: admin
+            
