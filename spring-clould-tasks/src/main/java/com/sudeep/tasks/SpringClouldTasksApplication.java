@@ -38,9 +38,9 @@ public class SpringClouldTasksApplication {
 				System.out.println("Station ID: " + stationId + " , License plate is " + licensePlate + "  , timestamp "
 						+ timestamp);
 
-				Scanner sc = new Scanner(System.in);
-				int i = sc.nextInt();
-				System.out.println(i); // will print the variable
+//				Scanner sc = new Scanner(System.in);
+//				int i = sc.nextInt();
+//				System.out.println(i); // will print the variable
 
 			}
 
